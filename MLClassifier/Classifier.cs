@@ -6,7 +6,6 @@ namespace MLClassifier
     {
         public static string Classify(string imagePath)
         {
-            // Create single instance of sample data from first line of dataset for model input
 
             var imageBytes = File.ReadAllBytes(@$"{imagePath}");
             MLModel1.ModelInput sampleData = new MLModel1.ModelInput()
